@@ -21,5 +21,10 @@ jQuery(document).ready( function() {
             }
 
         },
+        onkeyup: function(element) { 
 
+            jQuery(element).valid();
+
+        }
+        
     });
