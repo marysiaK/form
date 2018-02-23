@@ -87,6 +87,9 @@ input[disabled="disabled"] {
     opacity: 0.5;
 }
 
+*:focus {
+    outline: none;
+}
 .results {
     padding-top: 40px;
 }
