@@ -5,13 +5,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FAFAFA;
+    background-color: #fff;
     color: #424242;
 }
 
 .container {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -24,7 +24,7 @@ input::-webkit-input-placeholder {
 }
 
 ::-moz-placeholder {
-  color: rgba( 0, 0, 0, .8 );
+  color: rgba( 0, 0, 0, 0.8 );
 }
 
 :-ms-input-placeholder {
@@ -50,6 +50,7 @@ input {
     height: 44px;
     padding: 0 15px;
     background: none;
+    -webkit-appearance: none;
     border: 0;
     border-bottom: 2px solid #27292d;
     font-size: 14px;
@@ -60,7 +61,7 @@ input[type="submit"] {
     display: block;
     margin: 40px auto;
     width: 50%;
-    background: #00CC99;
+    background: #fd4f00;
     border: 0;
     border-radius: 25px;
     transition: all .2s ease;
@@ -79,7 +80,7 @@ input[type="submit"]:hover {
 }
 
 .valid {
-    border-color: #9cc312;
+    border-color: #00ff00;
 }
 
 input[disabled="disabled"] {
