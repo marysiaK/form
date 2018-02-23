@@ -96,5 +96,42 @@ jQuery(document).ready( function() {
         minlength: jQuery.validator.format( 'Prosimy wprowadzić przynajmniej {0} znaków.' )
 
     });
+
+
+
+    jQuery( '.user-form form' ).submit( function(e) {
+
+        e.preventDefault();
+
+        
+
+        if( !jQuery( '.user-form form input.error').length ) {
+
+           
+            jQuery( '.results' ).html( '<p>Formularz wypełniony prawidłowo!</p>' );
+
+
+            var form_data = {
+                first_name: jQuery( 'input[name="first-name"]' ).val(),
+                last_name: jQuery( 'input[name="last-name"]' ).val(),
+                pesel: jQuery( 'input[name="pesel"]' ).val(),
+                birthday: jQuery( 'input[name="birthday"]' ).val()
+            }
+
     
+            setTimeout( function() {
+
+                jQuery( '.results' ).append( JSON.stringify( form_data ) ); 
+
+            }, 200 );
+
+        } else {
+
+
+            jQuery( '.results' ).html( '<p>Sprawdź pola formularza lub wyślij ponownie.</p>' );
+
+        }
+
+    });
+
 });
