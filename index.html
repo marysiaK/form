@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>User form</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="User form">
+  	<meta name="author" content="Marysia Kołaczyńska">
+  	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	
+	<div class="container">
+		<div class="user-form">
+
+			<h2 class="header">User form</h2>
+
+			<form method="POST" action="index.html" autocomplete="off">
+				<fieldset>
+					<input type="text" name="first-name" placeholder="Imię" />
+				</fieldset>
+				<fieldset>
+					<input type="text" name="last-name" placeholder="Nazwisko" />
+				</fieldset>
+				<fieldset>
+					<input type="text" name="pesel" placeholder="Pesel" />
+				</fieldset>
+				<fieldset>
+					<input type="text" name="birthday"  placeholder="Data urodzenia" disabled="disabled" />
+				</fieldset>
+				<fieldset>
+					<input type="submit" value="Wyślij" />
+				</fieldset>
+			</form>
+
+			<div class="results"></div>
+
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
+
+			

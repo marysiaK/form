@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #424242;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba( 0, 0, 0, 0.8 );
+}
+
+::-moz-placeholder {
+  color: rgba( 0, 0, 0, .8 );
+}
+
+:-ms-input-placeholder {
+  color: rgba( 0, 0, 0, 0.8 );
+}
+
+::-webkit-input-placeholder {
+  color: rgba( 0, 0, 0, 0.8 );
+}
+
+::placeholder {
+  color: rgba( 0, 0, 0, 0.8 );
+}
+
+fieldset {
+    margin: 0 0 5px;
+    padding: 0;
+    border: 0;
+}
+
+input {
+    width: 100%;
+    height: 44px;
+    padding: 0 15px;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #27292d;
+    font-size: 14px;
+    color: #303439;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 40px auto;
+    width: 50%;
+    background: #00CC99;
+    border: 0;
+    border-radius: 25px;
+    transition: all .2s ease;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.error {
+    border-color: #ff0000;
+}
+
+.valid {
+    border-color: #9cc312;
+}
+
+input[disabled="disabled"] {
+    opacity: 0.5;
+}
+
+.results {
+    padding-top: 40px;
+}
+
+.results p {
+    text-align: center;
+}
