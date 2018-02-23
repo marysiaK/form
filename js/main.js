@@ -26,5 +26,13 @@ jQuery(document).ready( function() {
             jQuery(element).valid();
 
         }
-        
+
     });
+
+    jQuery.validator.addMethod( 'pesel', function() {
+        
+        var pesel = jQuery( 'input[name="pesel"]' ).val();
+        var digits = pesel.split( '' );
+    });
+
+});
